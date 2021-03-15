@@ -1,7 +1,6 @@
-// Get color from data-color.
+// Get theme from data-theme.
 const setColor = (ele) => {
   if (ele.data('theme')) {
-    // ele.closest('.main-slider').css('background-color', ele.data('color'));
     $('.main-slider')
       .removeClass()
       .addClass('main-slider')
@@ -9,7 +8,7 @@ const setColor = (ele) => {
   }
 };
 
-// Slider.
+// Slider settings.
 $(document)
   .ready(function () {
     $('.main-slider').slick({
