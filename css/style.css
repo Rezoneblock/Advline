@@ -37,6 +37,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat-Medium", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   outline: none;
 }
 
@@ -64,7 +68,7 @@ img {
   position: relative;
   -webkit-transition: .4s;
   transition: .4s;
-  z-index: -1;
+  z-index: 1;
 }
 
 .slick-dots {
@@ -75,6 +79,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  z-index: 2;
 }
 
 .slick-dots li:not(:last-of-type) {
@@ -162,6 +167,8 @@ img {
   line-height: 54px;
   font-weight: 700;
   max-width: 550px;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .main__list__reasons-block {
@@ -179,11 +186,15 @@ img {
 
 .main__list__reasons-block__title {
   font-weight: 600;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .main__list__reasons-block__text {
   opacity: .8;
   max-width: 500px;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .main__list__info-block {
@@ -201,12 +212,16 @@ img {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .main__list__info-block__text {
   font-family: 'BebasNeueCyrillic';
   text-transform: uppercase;
   font-size: 96px;
+  -webkit-transition: .4s;
+  transition: .4s;
   line-height: 100%;
 }
 
@@ -234,5 +249,55 @@ img {
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: 90%;
+  }
+  .main__list__title {
+    font-size: 40px;
+  }
+  .main__list__info-block__text {
+    font-size: 72px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main__list__title {
+    max-width: 300px;
+    font-size: 24px;
+  }
+  .main__list__reasons-block {
+    max-width: 300px;
+  }
+  .main__list__reasons-block__title {
+    font-size: 16px;
+  }
+  .main__list__reasons-block__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .main__list__info-block__text {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .main__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__list__item:first-of-type {
+    display: none;
+  }
+  .slick-dots {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
 }
 /*# sourceMappingURL=style.css.map */

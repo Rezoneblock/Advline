@@ -15,6 +15,8 @@ $(document)
       dots: true,
       arrows: false,
       appendDots: $('.main__list__pagination'),
+      autoplay: true,
+      autoplaySpeed: 5000,
     });
   })
   .on('init', (slick) => {
