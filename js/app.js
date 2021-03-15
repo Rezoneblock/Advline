@@ -1,7 +1,11 @@
 // Get color from data-color.
 const setColor = (ele) => {
-  if (ele.data('color')) {
-    ele.closest('.main-slider').css('background-color', ele.data('color'));
+  if (ele.data('theme')) {
+    // ele.closest('.main-slider').css('background-color', ele.data('color'));
+    $('.main-slider')
+      .removeClass()
+      .addClass('main-slider')
+      .addClass(`${ele.data('theme')}`);
   }
 };
 

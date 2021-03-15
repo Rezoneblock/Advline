@@ -64,11 +64,12 @@ img {
   overflow: hidden;
 }
 
-.main-slider {
-  position: relative;
-  -webkit-transition: .4s;
-  transition: .4s;
-  z-index: 1;
+.theme-orange {
+  background-image: linear-gradient(135deg, #f75d2b, #ae320a);
+}
+
+.theme-green {
+  background-image: linear-gradient(135deg, #4bdb6d, #37c058);
 }
 
 .slick-dots {
@@ -253,6 +254,20 @@ img {
   transition: .4s;
 }
 
+.main-slider {
+  position: relative;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: -2;
+}
+
+.main-slider__bg-icon {
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+  max-height: 100%;
+}
+
 @media screen and (max-width: 1250px) {
   .container {
     max-width: 90%;
@@ -269,6 +284,7 @@ img {
   .main__list__title {
     max-width: 300px;
     font-size: 24px;
+    line-height: 40px;
   }
   .main__list__reasons-block {
     max-width: 300px;
