@@ -1,0 +1,29 @@
+.slick-track
+  display: flex
+.slick-list
+  overflow: hidden
+.main-slider
+  position: relative
+  transition: .4s
+  z-index: -1
+.slick-dots
+  position: absolute
+  top: 17%
+  right: 25%
+  display: flex
+  list-style: none
+  li
+    &:not(:last-of-type)
+      margin-right: 16px
+    button
+      cursor: pointer
+      font-size: 0
+      width: 15px
+      height: 15px
+      background-color: #fff
+      border-radius: 50%
+      border: none
+      transition: .4s
+  .slick-active
+    button
+      background-color: #000
