@@ -1,12 +1,18 @@
 .main
   margin-top: 100px
   padding-bottom: 100px
-  background:
   &__list
     display: flex
     justify-content: space-between
     color: #fff
+    z-index: 20
+    &__pagination
+      position: absolute
+      top: 17%
+      right: 25%
+      z-index: 1
     &__item
+      z-index: 30
       display: flex
       flex-direction: column
     &__title
